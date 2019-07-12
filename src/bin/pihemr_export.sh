@@ -8,6 +8,6 @@ echo
 echo
 echo
 echo
-mysqldump -u openmrs --password='MYSQL_OPENMRS_PASSWORD' openmrs >~/laguna-emr.sql
+mysqldump -u openmrs --password='MYSQL_OPENMRS_PASSWORD' openmrs >~/pihemr-dump.sql
 # ideally filename should be ${HOSTNAME}-$(date +$Y-$M).sql
 # but it's resolving to '--.sql' which is not awesome
