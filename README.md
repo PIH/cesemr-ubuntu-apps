@@ -9,6 +9,20 @@ from the need to use the command line.
 It is assumed that the user is named `doc`, and the database and its user
 named `openmrs`.
 
+## Apps
+
+**PIH EMR Export** dumps the database to `~doc/ces-laguna.sh`. Could use
+to be made a bit more flexible.
+
+**Update PIH EMR** runs a puppet install.
+
+**PIH EMR Logs** opens the log file in gedit.
+
+**Restart PIH EMR** does a `sudo service tomcat7 restart`.
+
+**PIH EMR Restore** guides the user through loading a backup file into
+the database.
+
 ## Setup
 
 To build, run `./build.sh`. You'll need to know the password for the
