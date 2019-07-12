@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Update PIH EMR 
+Name[es]=Actualizar PIH EMR
+Comment=Downloads and installs updates to PIH EMR
+Comment[es]=Descargar y installar actualizaciones para PIH EMR
+Exec=sh -c "cd /etc/puppet; sudo ./install.sh"
+Icon=/usr/share/icons/hicolor/scalable/apps/update_pihemr.png
+Terminal=true
+Type=Application
+Categories=Utility;Application;

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Restore PIH EMR from Backup
+Name[es]=Restaurar PIH EMR de Copia de Seguridad
+Comment=Restores the PIH EMR database from the backup file for a specified day
+Comment[es]=Restora el baso de datos de PIH EMR de una copia de seguridad
+Exec=/etc/puppet/bin/pihemr_restore.sh
+Icon=/usr/share/icons/hicolor/scalable/apps/pihemr_restore.svg
+Terminal=true
+Type=Application
+Categories=Utility;Application;

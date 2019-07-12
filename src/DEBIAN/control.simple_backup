@@ -1,0 +1,7 @@
+Package: pihemrsimplebackup
+Version: 0.1-1
+Section: base
+Priority: optional
+Architecture: i386
+Maintainer: Brandon Istenes <bistenes@pih.org>
+Description: Backs up the PIH EMR database into ~doc/openmrs-backup

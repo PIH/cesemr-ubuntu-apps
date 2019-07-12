@@ -1,0 +1,8 @@
+Package: pihemrexport
+Version: 0.1-1
+Section: base
+Priority: optional
+Architecture: i386
+Maintainer: Brandon Istenes <bistenes@pih.org>
+Description: Exports the PIH EMR database to a file in the user's home directory
+

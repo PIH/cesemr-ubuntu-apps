@@ -1,0 +1,3 @@
+#!/bin/sh
+
+gedit ~tomcat7/.OpenMRS/openmrs.log

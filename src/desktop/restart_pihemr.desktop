@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Restart PIH EMR
+Name[es]=Reiniciar PIH EMR
+Comment=Restarts PIH EMR. Takes a few minutes.
+Comment[es]=Reiniciar PIH EMR. Dura unos minutos.
+Exec=sh -c "sudo service tomcat7 restart"
+Icon=/usr/share/icons/hicolor/scalable/apps/restart_pihemr.svg
+Terminal=true
+Type=Application
+Categories=Utility;Application;
