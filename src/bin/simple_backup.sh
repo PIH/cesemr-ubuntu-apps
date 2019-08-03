@@ -8,7 +8,8 @@ chown ${_USER}:${_USER} ${BACKUP_DIR}
 
 FILENAME=$(date -Iminutes)
 
-mysqldump -u openmrs --password='MYSQL_OPENMRS_PASSWORD' openmrs > ${BACKUP_DIR}/${FILENAME}
+mysqldump -u openmrs --password='MYSQL_OPENMRS_PASSWORD' --opt --flush-logs --single-transaction openmrs 2>/dev/null | 7za a -pBACKUP_PASSWORD -sibackup.sql -t7z ${BACKUP_DIR}/${FILENAME} -mx9 2>&1 >/dev/null
 
 # clear old
-rm ${BACKUP_DIR}/$(date --date='last month' +%Y-%M)*
+find ${BACKUP_DIR} -mtime +15 -exec rm {} \;
+

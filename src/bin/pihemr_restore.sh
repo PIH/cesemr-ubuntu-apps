@@ -31,7 +31,11 @@ function Confirm {
 		echo Ok, ya. Y ahora para cargar este copia de seguridad del \
 			${DIA} al base de datos...
 		echo 
-		mysql -u openmrs --password='MYSQL_OPENMRS_PASSWORD' -D ${DATABASE} <${BACKUP_FILENAME}
+        TMP_DIR=sql-tmp/
+        mkdir -p ${TMP_DIR}
+        7za e ${BACKUP_FILENAME} -pBACKUP_PASSWORD -o${TMP_DIR}
+		mysql -u openmrs --password='MYSQL_OPENMRS_PASSWORD' -D ${DATABASE} <${TMP_DIR}/backup.sql
+        rm -r ${TMP_DIR}
 		echo Ya!
 	elif [ "${CONFIRM}" = "n" ]; then
 		GetFilename

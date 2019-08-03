@@ -11,7 +11,7 @@ named `openmrs`.
 
 ## Apps
 
-**PIH EMR Export** dumps the database to `~doc/ces-laguna.sh`. Could use
+**PIH EMR Export** dumps the database to `~doc/pihemr-archivo.sql.7z`. Could use
 to be made a bit more flexible.
 
 **Update PIH EMR** runs a puppet install.
