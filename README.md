@@ -1,13 +1,16 @@
-# PIH EMR Ubuntu Apps
+# CES EMR Ubuntu Apps
 
 This is a collection of Ubuntu "apps" to be installed with deployments
-of PIH EMR where the server is being administrated by non-technical onsite
+of CES EMR where the server is being administrated by non-technical onsite
 staff. They're basically just buttons to do things that are pretty
 straightforward on the command line. We just want to protect our users
 from the need to use the command line.
 
 It is assumed that the user is named `doc`, and the database and its user
 named `openmrs`.
+
+The UI is in Spanish, which is the main thing that makes this for CES EMR
+rather than for PIH EMR more generally.
 
 ## Apps
 
