@@ -1,0 +1,8 @@
+Package: resetpihemrconfiguration
+Version: 0.1-1
+Section: base
+Priority: optional
+Architecture: i386
+Maintainer: Brandon Istenes <bistenes@pih.org>
+Description: Restarts PIH EMR and reloads the configuration files
+

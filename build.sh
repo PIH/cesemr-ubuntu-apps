@@ -27,7 +27,7 @@ function Interpolate {
 }
 
 # Build the apps
-for APP_NAME in update_pihemr pihemr_logs restart_pihemr pihemr_export pihemr_restore simple_backup
+for APP_NAME in update_pihemr pihemr_logs restart_pihemr pihemr_export pihemr_restore simple_backup restart_network reset_pihemr_configuration
 do
 	VERSION=0.1
 	PACKAGE_NAME=${APP_NAME}_${VERSION}-1

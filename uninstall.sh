@@ -1,6 +1,6 @@
 #! /bin/bash
 
-for APP_NAME in update_pihemr pihemr_logs restart_pihemr pihemr_export pihemr_restore
+for APP_NAME in update_pihemr pihemr_logs restart_pihemr pihemr_export pihemr_restore restart_network reset_pihemr_configuration
 do
     sudo rm /etc/puppet/bin/${APP_NAME}.sh
     sudo rm /usr/share/icons/hicolor/scalable/apps/${APP_NAME}.*

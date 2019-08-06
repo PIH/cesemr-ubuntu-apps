@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Reset PIH EMR Configuration
+Name[es]=Recargar PIH EMR Configuración
+Comment=Restarts PIH EMR and re-loads the configuration files
+Comment[es]=Reiniciar PIH EMR y recargar los archivos de configuración
+Exec=sh -c "sudo rm -r ~tomcat7/.OpenMRS/configuration_checksum; sudo service tomca7 restart"
+Icon=/usr/share/icons/hicolor/scalable/apps/reset_pihemr_configuration.png
+Terminal=true
+Type=Application
+Categories=Utility;Application;

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install debian packages
-for APP_NAME in update_pihemr pihemr_logs restart_pihemr pihemr_export pihemr_restore simple_backup
+for APP_NAME in update_pihemr pihemr_logs restart_pihemr pihemr_export pihemr_restore simple_backup restart_network reset_pihemr_configuration
 do
     sudo dpkg -i dist/${APP_NAME}.deb
 done

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Restart Network Manager
+Name[es]=Reiniciar Administrador de Redes
+Comment=May resolve some WiFi problems
+Comment[es]=Puede resolvar algunos problemas de WiFi
+Exec=sh -c "sudo service network-manager restart"
+Icon=/usr/share/icons/hicolor/scalable/apps/restart_network.png
+Terminal=true
+Type=Application
+Categories=Utility;Application;
