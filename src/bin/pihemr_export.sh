@@ -1,4 +1,19 @@
-#!/bin/sh
+#!/bin/bash
+
+set -eE  # same as: `set -o errexit -o errtrace`
+trap catch_error ERR 
+
+RED="\e[01;31m"
+
+function catch_error {
+    echo
+    echo -e ${RED}===ERROR===_
+    echo
+    echo Encontró un error grave! Por favor empuje el botón Impr Pant y enviar el imagen al administrador del EMR.
+    echo
+    read -p "Después que imprimes la pantalla, empuje enter para continuar."
+    exit 1
+}
 
 echo Creando un archivo del baso de datos de PIH EMR.
 echo 
