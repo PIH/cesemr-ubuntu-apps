@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eE  # same as: `set -o errexit -o errtrace`
+set -eEo pipefail  # same as: `set -o errexit -o errtrace -o pipefail`
 trap catch_error ERR 
 
 RED="\e[01;31m"
@@ -23,6 +23,6 @@ echo
 echo
 echo
 SQL_NAME=pihemr-archivo.sql
-mysqldump -u openmrs --password='MYSQL_OPENMRS_PASSWORD' --opt --flush-logs --single-transaction openmrs 2>/dev/null | 7za a -pBACKUP_PASSWORD -si${SQL_NAME} -t7z ~/${SQL_NAME}.7z -mx9 2>&1 >/dev/null
+mysqldump -u openmrs --password='MYSQL_OPENMRS_PASSWORD' --opt --flush-logs --single-transaction openmrs | 7za a -pBACKUP_PASSWORD -si${SQL_NAME} -t7z ~/${SQL_NAME}.7z -mx9 2>&1
 # ideally filename should be ${HOSTNAME}-$(date +$Y-$M).sql.7z
 # but it's resolving to '--.sql.7z' which is not awesome
